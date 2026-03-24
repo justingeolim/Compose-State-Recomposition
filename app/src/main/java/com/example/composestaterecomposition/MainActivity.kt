@@ -26,6 +26,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +44,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun CounterScreen(modifier: Modifier = Modifier) {
+    // survives rotation by rememberSaveable
     var count by rememberSaveable { mutableIntStateOf(0) }
 
     Column(
@@ -54,6 +56,7 @@ fun CounterScreen(modifier: Modifier = Modifier) {
     ) {
         Text(
             text = "Count: $count",
+            fontSize = 40.sp
         )
 
         Spacer(modifier = Modifier.height(24.dp))
