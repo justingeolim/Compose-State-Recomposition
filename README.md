@@ -14,3 +14,7 @@ Satisfies the following conditions on Jetpack Compose:
 2.	You must use:
     o	rememberSaveable
     o	mutableStateOf
+
+## Preview
+<img width="274" height="593" alt="Screenshot 2026-03-24 at 3 27 45 PM" src="https://github.com/user-attachments/assets/ad5474c2-a844-49f4-9574-13974e6fa1aa" />
+
